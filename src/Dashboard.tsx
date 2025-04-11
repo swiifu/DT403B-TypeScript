@@ -5,14 +5,20 @@ import { CustomerListCard } from './components/CustomerListCard';
 
 export default function Dashboard() {
     return (
-        <div className="min-h-screen bg-slate-900 text-white p-6 space-y-6">
-            <h1 className="text-4xl font-bold mb-4">📊 Microsoft Licensing Dashboard</h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6">
+        <div className="min-h-screen bg-slate-900 text-white p-6 space-y-6 flex flex-col items-center">
+            <h1 className="text-4xl font-bold mb-4 text-center">
+                DT403B Microsoft Licensing Dashboard
+            </h1>
+
+            <div className="w-full max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6 justify-items-center">
+                {/* Each card will now be centered in its grid cell */}
                 <ProductListCard />
                 <PriceHistoryCard />
-                <RevenueChartCard />
-                <CustomerListCard />
+                {/* <RevenueChartCard /> */}
+                {/* <CustomerListCard /> */}
             </div>
         </div>
     );
 }
+
+console.log('Dashboard is rendering');
