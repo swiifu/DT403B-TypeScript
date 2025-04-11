@@ -1,1 +1,3 @@
-console.log('Happy developing ✨')
+import { getWhoAmI } from './api/arrowsphere';
+
+getWhoAmI();
