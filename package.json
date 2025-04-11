@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "dashboard-ui",
   "private": true,
   "version": "0.0.0",
@@ -26,4 +27,18 @@
     "typescript-eslint": "^8.24.1",
     "vite": "^6.2.0"
   }
+=======
+  "name": "dt403b_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.5.3"
+  },
+  "private": true
+>>>>>>> e1cbd6ed397f5cc8bae47ee269eb6d6fd35fb338
 }
