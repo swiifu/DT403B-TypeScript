@@ -1,3 +1,8 @@
-import { getWhoAmI } from './api/arrowsphere';
+import dotenv from 'dotenv';
+dotenv.config();
 
-getWhoAmI();
+import { getMicrosoftProducts } from './api/arrowsphere';
+
+getMicrosoftProducts().then((products) => {
+  console.log('🧾 Microsoft Products:', products);
+});
